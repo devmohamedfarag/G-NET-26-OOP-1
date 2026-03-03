@@ -117,4 +117,19 @@
 
 #endregion
 
+#region Question04:
+// Q4: What is a class library? Why do we use class libraries?
+
+// Answer: A class library is a collection of classes, interfaces, and other reusable software components
+//         in object-oriented programming that developers can incorporate into their own applications.
+//         These libraries are typically compiled into a single binary file (such as a DLL in .NET) and provide pre-written, tested code to perform common tasks
+//
+//We use Class Librsries for several reasons:
+// 1- Code Resuability: Class libraries allow developers to reuse code across multiple projects, reducing duplication and improving maintainability.
+// 2- Maintainability: By centralizing common functionality in a class library, developers can easily update and maintain that code without having to modify each individual project that uses it.
+// 3- Scalability: Class libraries can be designed to be modular and extensible, allowing developers to add new features or functionality without affecting existing code.
+// 4- Team Development: Class libraries facilitate collaboration among developers by providing a shared codebase that can be easily accessed and used by multiple team members.
+// 5- Better Project Organization: Class libraries help organize code into logical units, making it easier to navigate and understand the structure of a project.
+#endregion'
+
 #endregion

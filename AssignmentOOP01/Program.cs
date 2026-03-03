@@ -101,4 +101,34 @@
  }*/
 #endregion
 
+#region Question03:
+// Q3: Describe the steps to create and use a class library in Visual Studio.
+
+// Answer: To create and use a class library in Visual Studio, follow these steps:
+// 1. Create a Class Library Project:
+//    - Open Visual Studio and select "Create a new project."
+//    - Choose "Class Library" from the project templates and click "Next."
+//    - Name your project and click "Create."
+// 2. Add Code to the Class Library:
+//    - In the Solution Explorer, open the Class1.cs file (or create a new class).
+//    - Write your class code. For example:
+//
+//   public class MyClass
+//    {
+//        public string GetMessage()
+//        {
+//            return "Hello from the class library!";
+//        }
+//    }
+// 3. Build the Class Library:
+//    - Go to the "Build" menu and select "Build Solution" to compile the class library.
+// 4. Reference the Class Library in Another Project:
+//    - In the Solution Explorer, right-click on the project that will use the class library and select "Add" > "Reference."
+//    - In the Reference Manager, go to the "Projects" tab and select the class library project you just created. Click "OK."
+// 5. Use the Class Library in Your Code:
+//    - In the project that references the class library, add a using directive for the namespace of the class library.
+//    - Create an instance of the class from the library and call its methods.
+
+#endregion
+
 #endregion

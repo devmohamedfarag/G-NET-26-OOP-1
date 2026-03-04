@@ -133,3 +133,54 @@
 #endregion'
 
 #endregion
+
+#region Part 02:
+// Movie Ticket Booking System:
+using AssignmentOOP01;
+
+class program 
+{     
+    static void Main()
+    {
+        Console.WriteLine("==== Welcome to the Movie Ticket Booking System! ====");
+        
+        Console.Write("Please Enter the Movie Name: ");
+        string? movieName = Console.ReadLine();
+        
+        Console.Write("Please Enter the Movie Type (0 = Standard, 1 = VIP, 2 = IMax): ");
+        int typeInput = int.Parse(Console.ReadLine());
+        TicketType type = (TicketType)typeInput;    
+
+        Console.Write("Please Enter Saeat Row (A, B, C, ....): ");
+        char row = char.Parse(Console.ReadLine());
+
+        Console.Write("Please Enter Seat Number: ");
+        int seatNumber = int.Parse(Console.ReadLine());
+        
+        Console.Write("Please Enter The Price: ");
+        double price = double.Parse(Console.ReadLine());
+
+        Console.Write("Please Enter The Discount Amount: ");
+        double discount = double.Parse(Console.ReadLine());
+
+        SeatLoctaion seatLocation = new SeatLoctaion(row, seatNumber);
+        Ticket ticket = new Ticket(movieName, type, seatLocation, price);
+
+        double tax = 14;
+
+        // Before applying discount
+        Console.WriteLine("\n======= Ticket Info ======");
+        ticket.PrintTicket(tax);    
+
+        Console.WriteLine("\n===== After Applying Discount =====");
+
+        double beforeDiscount = discount;
+        ticket.ApplyDiscount(ref discount);
+
+        Console.WriteLine($"Discount Before : {beforeDiscount:F2}");
+        Console.WriteLine($"Discount After  : {discount:F2}");
+
+        ticket.PrintTicket(tax);
+    }
+}
+#endregion
